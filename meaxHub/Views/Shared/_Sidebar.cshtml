@@ -1,0 +1,156 @@
+﻿@using Microsoft.EntityFrameworkCore
+@inject MeaxHub.Data.MeaxDbContext Db
+
+@{
+    string ctrl = (ViewContext.RouteData.Values["controller"] as string) ?? "";
+    string action = (ViewContext.RouteData.Values["action"] as string) ?? "";
+
+    string Active(string c, string? a = null)
+    {
+        bool m = ctrl.Equals(c, StringComparison.OrdinalIgnoreCase)
+                 && (a == null || action.Equals(a, StringComparison.OrdinalIgnoreCase));
+        return m ? "active" : "";
+    }
+
+    // Usuario actual
+    var isAuth = User?.Identity?.IsAuthenticated ?? false;
+
+    var displayName = isAuth
+        ? (User.FindFirst("DisplayName")?.Value
+           ?? User.Identity?.Name
+           ?? User.FindFirst("PcLoginId")?.Value
+           ?? "")
+        : "";
+
+    // 👇 PcLoginId real (DM45207)
+    var pcLoginId = User.FindFirst("PcLoginId")?.Value
+                    ?? User.Identity?.Name
+                    ?? "";
+
+    // 1) Intentar leer Department del claim
+    var deptRaw = User.FindFirst("Department")?.Value ?? "";
+    var dept = deptRaw.Trim();
+
+    // 2) Si viene vacío, buscar en BD por PcLoginId
+    if (isAuth && string.IsNullOrEmpty(dept) && !string.IsNullOrEmpty(pcLoginId))
+    {
+        var userRow = await Db.MeaxAllUsers
+            .FirstOrDefaultAsync(u => u.PcLoginId == pcLoginId);
+
+        if (userRow != null && !string.IsNullOrWhiteSpace(userRow.Department))
+        {
+            dept = userRow.Department.Trim();
+        }
+    }
+
+    // 3) Considerar IT si dept = "IT" o empieza con "IT "
+    bool isIT = dept.Equals("IT", StringComparison.OrdinalIgnoreCase)
+                || dept.StartsWith("IT ", StringComparison.OrdinalIgnoreCase);
+
+    // Cargar TODOS los sistemas activos
+    var allSystems = await Db.MeaxAllSystems
+        .Where(s => s.IsActive)
+        .OrderBy(s => s.Name)
+        .ToListAsync();
+}
+
+<aside class="sidebar" id="sidebar">
+    <nav id="sidebarAccordion" class="sidebar-menu p-2">
+        <ul class="nav flex-column">
+
+            <!-- Inicio -->
+            <li class="nav-item mb-1">
+                <a class="nav-link @Active("Home", "Index")" asp-controller="Home" asp-action="Index">
+                    <i class="fas fa-home me-2"></i> Inicio
+                </a>
+            </li>
+
+            <!-- Sistemas MEAX -->
+            <li class="nav-section text-white-50 small text-uppercase px-2 mt-3">Sistemas</li>
+            <li class="nav-item">
+                <a class="nav-link section-toggle d-flex align-items-center @(ctrl.Equals("Home", StringComparison.OrdinalIgnoreCase) ? "" : "collapsed")"
+                   data-bs-toggle="collapse" href="#menuSistemas" role="button"
+                   aria-expanded="@(ctrl.Equals("Home", StringComparison.OrdinalIgnoreCase).ToString().ToLower())"
+                   aria-controls="menuSistemas">
+                    <i class="fas fa-th-large me-2"></i> Hub de sistemas
+                    <span class="ms-auto chev fas fa-chevron-right"></span>
+                </a>
+                <div id="menuSistemas" class="collapse @(ctrl.Equals("Home", StringComparison.OrdinalIgnoreCase) ? "show" : "")"
+                     data-bs-parent="#sidebarAccordion">
+                    <ul class="nav flex-column ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link @Active("Home", "Index")" asp-controller="Home" asp-action="Index">
+                                <i class="fas fa-layer-group me-2"></i> Ver todos
+                            </a>
+                        </li>
+
+                        @if (allSystems.Any())
+                        {
+                            <li class="nav-section text-white-50 small text-uppercase px-2 mt-2">Accesos directos</li>
+                            @foreach (var sys in allSystems)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@sys.Url" target="_blank" rel="noopener">
+                                        <i class="fas fa-arrow-up-right-from-square me-2"></i>@sys.Name
+                                    </a>
+                                </li>
+                            }
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <span class="nav-link text-muted small">
+                                    <i class="fas fa-info-circle me-1"></i>
+                                    No hay sistemas configurados.
+                                </span>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Administración (solo IT) -->
+            @if (isIT)
+            {
+                <li class="nav-section text-white-50 small text-uppercase px-2 mt-3">Administración</li>
+                <li class="nav-item">
+                    <a class="nav-link @Active("Systems", "Create")" asp-controller="Systems" asp-action="Create">
+                        <i class="fas fa-plus-square me-2"></i> Alta de sistemas
+                    </a>
+                </li>
+            }
+
+        </ul>
+    </nav>
+
+    <div class="sidebar-footer p-2">
+        @if (isAuth)
+        {
+            <div class="user-info text-white-50 mb-2 d-flex">
+                <i class="fas fa-user-circle me-2 mt-1"></i>
+                <div class="d-flex flex-column">
+                    <span>@displayName</span>
+                    <span class="small text-muted">
+                        @if (!string.IsNullOrEmpty(pcLoginId))
+                        {
+                            @pcLoginId
+                        }
+                        @if (!string.IsNullOrEmpty(dept))
+                        {
+                            @: · @dept
+                        }
+                    </span>
+                </div>
+            </div>
+            <a class="btn btn-sm btn-outline-light w-100" asp-controller="Account" asp-action="Logout">
+                <i class="fas fa-sign-out-alt me-1"></i> Cerrar sesión
+            </a>
+        }
+        else
+        {
+            <a class="btn btn-sm btn-primary w-100" asp-controller="Account" asp-action="Login">
+                <i class="fas fa-sign-in-alt me-1"></i> Iniciar sesión
+            </a>
+        }
+    </div>
+</aside>

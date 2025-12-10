@@ -1,0 +1,33 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "Administrar usuarios";
+}
+
+<h2>Administrar usuarios</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>PC Login</th>
+            <th>Nombre</th>
+            <th>Sistemas asignados</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.PcLoginId</td>
+                <td>@u.Username</td>
+                <td>@u.SystemsCount</td>
+                <td>
+                    <a asp-controller="Admin" asp-action="EditUserSystems" asp-route-id="@u.Id" class="btn btn-sm btn-primary">
+                        Editar sistemas
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

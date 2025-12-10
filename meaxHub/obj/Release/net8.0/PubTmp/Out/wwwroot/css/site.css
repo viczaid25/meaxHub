@@ -1,0 +1,907 @@
+/* =========================
+   Variables
+   ========================= */
+:root {
+    --color-primary: #2c5fa8;
+    --color-primary-2: #3a7fc1;
+    --color-primary-gradient: linear-gradient(90deg,#2c5fa8,#3a7fc1);
+    --color-secondary: #2f3e4d;
+    --color-dark: #1c1e22;
+    --text: #0f172a; /* más oscuro que #000 puro */
+    --text-muted: #6b7280;
+    --bg: #f8f9fc;
+    --surface: #ffffff;
+    --border: #e5e7eb;
+    --placeholder: #9ca3af;
+    --sidebar-w: 240px;
+    --navbar-h: 56px;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --shadow-sm: 0 2px 6px rgba(0,0,0,.06);
+    --shadow-md: 0 6px 16px rgba(0,0,0,.08);
+    --shadow-lg: 0 10px 25px rgba(0,0,0,.12);
+    --focus: 0 0 0 .25rem rgba(44,95,168,.3);
+    --bs-primary-rgb: 44,95,168; /* #2C5FA8 */
+    --bs-primary: #2c5fa8;
+    --col-no-w: 90px;
+}
+
+/* =================
+   Base
+   ================= */
+* {
+    box-sizing: border-box
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.page-title {
+    color: var(--text) !important
+}
+
+/* =================
+   Navbar
+   ================= */
+.top-navbar, header.navbar {
+    background: var(--color-primary-gradient);
+    backdrop-filter: saturate(140%) blur(6px);
+    box-shadow: var(--shadow-sm);
+    z-index: 1030;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--navbar-h);
+}
+
+/* ==============
+   Sidebar
+   ============== */
+.sidebar {
+    position: fixed;
+    top: var(--navbar-h);
+    left: 0;
+    bottom: 0;
+    width: var(--sidebar-w);
+    background: var(--color-secondary);
+    color: #fff;
+    overflow-y: auto;
+    border-right: 1px solid rgba(255,255,255,.06);
+    box-shadow: 4px 0 12px rgba(0,0,0,.08);
+    transform: translateX(0);
+    transition: transform .25s ease;
+    z-index: 1020;
+}
+
+    /* Títulos/separadores en el menú */
+    .sidebar .nav-section {
+        letter-spacing: .08em;
+        opacity: .9;
+        font-size: .73rem;
+        margin: .35rem 0 .15rem;
+    }
+
+/* Links base + refinamiento visual */
+.sidebar-menu .nav-link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .6rem 1rem;
+    color: #fff;
+    border-left: 3px solid transparent;
+    border-radius: var(--radius-sm);
+    margin: 2px 6px;
+    transition: background-color .2s ease,border-color .2s ease,color .15s ease;
+    font-size: .925rem;
+    font-weight: 600;
+}
+
+    .sidebar-menu .nav-link:hover {
+        background: rgba(255,255,255,.10);
+        border-left-color: #8ab5ff;
+        color: #fff;
+    }
+
+    .sidebar-menu .nav-link.active {
+        background: rgba(13,110,253,.22);
+        border-left-color: var(--bs-primary);
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .sidebar-menu .nav-link i {
+        width: 18px;
+        text-align: center;
+        margin-right: .5rem;
+    }
+
+/* Toggle de secciones (el <a> que abre/cierra el collapse) */
+.sidebar .section-toggle {
+    color: #f0f3f7;
+    font-weight: 700;
+}
+
+    .sidebar .section-toggle:hover {
+        color: #fff;
+    }
+
+    /* Chevron que rota al expandir */
+    .sidebar .section-toggle .chev {
+        margin-left: auto;
+        font-size: .8rem;
+        opacity: .85;
+        transition: transform .18s ease;
+    }
+
+    .sidebar .section-toggle:not(.collapsed) .chev {
+        transform: rotate(90deg);
+    }
+
+/* Submenús colapsables: sangría y densidad */
+.sidebar .collapse {
+    padding: 2px 0 6px 0;
+}
+
+    .sidebar .collapse .nav-link {
+        padding-left: 2rem;
+        font-weight: 600;
+        opacity: .95;
+    }
+
+        .sidebar .collapse .nav-link.active {
+            background: rgba(255,255,255,.12);
+        }
+
+/* Resalta el padre si algún hijo está activo */
+.sidebar .section-toggle.is-parent-active {
+    background: rgba(255,255,255,.08);
+    border-left-color: #8ab5ff;
+    border-radius: var(--radius-sm);
+    margin: 2px 6px;
+}
+
+/* Footer del sidebar */
+.sidebar-footer {
+    position: sticky;
+    bottom: 0;
+    padding: .6rem;
+    background: rgba(0,0,0,.18);
+    backdrop-filter: blur(2px);
+}
+
+    .sidebar-footer .btn {
+        padding: .35rem .6rem;
+        font-size: .82rem;
+    }
+
+/* Scrollbar discreto */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,.18);
+    border-radius: 4px;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,.32);
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        transform: translateX(-100%)
+    }
+
+        .sidebar.active {
+            transform: translateX(0)
+        }
+
+    body.sidebar-open {
+        overflow: hidden
+    }
+
+    .sidebar-backdrop {
+        content: "";
+        position: fixed;
+        inset: var(--navbar-h) 0 0 0;
+        background: rgba(0,0,0,.35);
+        backdrop-filter: blur(2px);
+        z-index: 1019;
+        display: none;
+    }
+
+    .sidebar.active + .sidebar-backdrop {
+        display: block
+    }
+}
+
+/* ====================
+   Contenido Principal
+   ==================== */
+.content-wrapper {
+    margin-top: var(--navbar-h);
+    margin-left: var(--sidebar-w);
+    padding: 1.25rem;
+    min-height: calc(100vh - var(--navbar-h));
+    transition: margin-left .25s ease;
+}
+
+@media (max-width: 992px) {
+    .content-wrapper {
+        margin-left: 0
+    }
+}
+
+/* ===================
+   Tarjetas
+   =================== */
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+
+    .card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-2px)
+    }
+
+.card-header {
+    background: var(--color-primary);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+/* ===================
+   Titulares
+   =================== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--text);
+}
+    /* Kill switch global para subrayado decorativo en títulos */
+    h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+        content: none !important;
+        display: none !important;
+    }
+
+/* =====================
+   Formularios
+   ===================== */
+.form-control, .form-select {
+    background: #fff !important;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: .5rem .9rem;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.04);
+    transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+    .form-control:focus, .form-select:focus {
+        border-color: var(--color-primary);
+        box-shadow: var(--focus);
+    }
+
+    .form-control::placeholder {
+        color: var(--placeholder)
+    }
+
+.form-floating > label {
+    color: #334155 !important;
+    font-weight: 600;
+    font-size: .95rem;
+    background: transparent !important;
+}
+
+/* ==================
+   Botones
+   ================== */
+.btn {
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    transition: transform .1s ease, box-shadow .2s ease;
+    position: relative;
+}
+
+    .btn:active {
+        transform: translateY(1px)
+    }
+
+.btn-primary {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+    .btn-primary:hover {
+        background: var(--color-primary-2);
+        border-color: var(--color-primary-2);
+        box-shadow: 0 8px 18px rgba(44,95,168,.25);
+    }
+
+.btn-outline-primary {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+    .btn-outline-primary:hover {
+        color: #fff;
+        background: var(--color-primary);
+        border-color: var(--color-primary);
+    }
+
+/* Ripple sutil */
+.btn:after {
+    content: "";
+    position: absolute;
+    inset: auto auto 50% 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.5);
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btn:hover:after {
+    animation: ripple .45s ease-out
+}
+
+@keyframes ripple {
+    0% {
+        opacity: .5;
+        transform: translate(-50%,-50%) scale(0)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%,-50%) scale(18)
+    }
+}
+
+/* =================
+   Tablas
+   ================= */
+.table {
+    --bs-table-bg: #fff;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+    .table thead th {
+        border-bottom: 2px solid var(--border);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: .74rem;
+        letter-spacing: .5px;
+        color: #64748b;
+    }
+
+    .table td, .table th {
+        padding: .8rem .75rem;
+        vertical-align: middle;
+        border-top: 1px solid var(--border);
+    }
+
+.table-hover tbody tr:hover {
+    background: #f4f6fa
+}
+
+/* =================
+   Utilidades
+   ================= */
+.rounded-3 {
+    border-radius: var(--radius) !important
+}
+
+.rounded-lg {
+    border-radius: calc(var(--radius) + 4px) !important
+}
+
+.badge {
+    font-weight: 600;
+    padding: .35em .65em;
+    font-size: .75em;
+    letter-spacing: .5px;
+}
+
+/* Asegura que bg-primary use tu tono */
+.bg-primary,
+.card-header.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Texto SIEMPRE blanco en headers primarios */
+.card-header.bg-primary,
+.card-header.text-white {
+    color: #fff !important;
+}
+
+/* Asegura que el ícono herede el color */
+.card-header .fa {
+    color: currentColor;
+}
+
+/* === Fix de headers de tarjeta con nuestro tema === */
+.card-header.custom-header-primary {
+    background: var(--color-primary-gradient) !important;
+    background-color: var(--color-primary) !important; /* fallback */
+    color: #fff !important;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+    .card-header.custom-header-primary *,
+    .card-header.custom-header-primary h1,
+    .card-header.custom-header-primary h2,
+    .card-header.custom-header-primary h3,
+    .card-header.custom-header-primary h4,
+    .card-header.custom-header-primary h5,
+    .card-header.custom-header-primary h6,
+    .card-header.custom-header-primary i,
+    .card-header.custom-header-primary .fa {
+        color: #fff !important;
+    }
+
+
+
+.card-header.bg-primary {
+    background-color: var(--bs-primary) !important;
+    color: #fff !important;
+}
+
+    .card-header.bg-primary * {
+        color: inherit !important;
+    }
+
+/* =================
+   Accesibilidad / Motion
+   ================= */
+:focus-visible {
+    outline: none;
+    box-shadow: var(--focus)
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important
+    }
+}
+
+/* Que TODAS las celdas tengan fondo sólido (no transparente) acorde al tema */
+.table:not(.table-dark) > :not(caption) > * > * {
+    background-color: var(--bs-table-bg, #fff);
+}
+
+/* Encabezados pegados encima del body */
+thead .sticky-col,
+thead .sticky-col-2 {
+    z-index: 2;
+    background-color: var(--bs-table-bg, #f8f9fa);
+}
+
+/* Respetar zebra-striping en filas impares */
+.table-striped > tbody > tr:nth-of-type(odd) > .sticky-col,
+.table-striped > tbody > tr:nth-of-type(odd) > .sticky-col-2 {
+    background-color: var(--bs-table-striped-bg, #f8f9fa);
+}
+
+/* Respetar hover */
+.table-hover > tbody > tr:hover > .sticky-col,
+.table-hover > tbody > tr:hover > .sticky-col-2 {
+    background-color: var(--bs-table-hover-bg, #f2f2f2);
+}
+
+/* Asegura fondos de separador también */
+.sep-col {
+    background-color: var(--bs-table-bg, #fff);
+}
+
+
+/* ancho de la 1ª col (No.) */
+
+.h-scroll {
+    overflow-x: auto;
+}
+
+/* La tabla puede crecer y forzar scroll si hace falta */
+.table-wide {
+    table-layout: auto !important; /* NO fixed */
+    width: max-content; /* ancho según contenido */
+    min-width: 1700px; /* ajusta según tus columnas */
+}
+
+/* Anchos mínimos para que no se amontone */
+.col-no {
+    width: var(--col-no-w);
+    min-width: var(--col-no-w);
+    max-width: var(--col-no-w);
+}
+
+.col-numparte {
+    min-width: 160px;
+}
+
+.col-desc {
+    min-width: 320px;
+}
+
+.col-case {
+    min-width: 160px;
+}
+
+.col-codmov {
+    min-width: 120px;
+}
+
+.col-a, .col-d {
+    min-width: 140px;
+}
+
+.col-num {
+    min-width: 110px;
+    text-align: right;
+}
+
+.col-mon {
+    min-width: 100px;
+}
+
+/* Sticky de las 2 primeras columnas */
+.sticky-col, .sticky-col-2 {
+    position: sticky;
+    z-index: 5; /* por encima de celdas normales */
+    background-color: #fff !important; /* sin transparencia */
+    background-clip: padding-box;
+    box-shadow: 2px 0 0 rgba(0,0,0,.06); /* línea/sombra sutil derecha */
+}
+
+thead .sticky-col, thead .sticky-col-2 {
+    z-index: 7;
+    background-color: #f8f9fa !important; /* header sólido */
+}
+
+.sticky-col {
+    left: 0;
+}
+
+.sticky-col-2 {
+    left: var(--col-no-w);
+}
+/* EXACTO al ancho de la 1ª */
+
+/* Evitar saltos que compactan */
+.table-wide th, .table-wide td {
+    white-space: nowrap;
+}
+
+/* ====== Tabla de Items/Aprobaciones: sticky + scroll ====== */
+
+/* 1) Contenedor con scroll horizontal */
+.h-scroll {
+    overflow-x: auto;
+}
+
+/* 2) La tabla puede crecer y forzar scroll si hace falta */
+.table-wide {
+    table-layout: auto !important;
+    width: max-content;
+    min-width: 1700px; /* ajusta si necesitas más/menos ancho base */
+}
+
+/* 3) Anchos por columna */
+.col-no {
+    width: var(--col-no-w);
+    min-width: var(--col-no-w);
+    max-width: var(--col-no-w);
+}
+
+.col-numparte {
+    min-width: 160px;
+}
+
+.col-desc {
+    min-width: 320px;
+}
+
+.col-case {
+    min-width: 160px;
+}
+
+.col-codmov {
+    min-width: 120px;
+}
+
+.col-a, .col-d {
+    min-width: 140px;
+}
+
+.col-num {
+    min-width: 110px;
+    text-align: right;
+}
+
+.col-mon {
+    min-width: 100px;
+}
+
+/* 4) Columnas pegadas */
+.sticky-col, .sticky-col-2 {
+    position: sticky;
+    z-index: 5;
+    background-color: #fff !important;
+    background-clip: padding-box;
+    box-shadow: 2px 0 0 rgba(0,0,0,.06);
+}
+
+thead .sticky-col, thead .sticky-col-2 {
+    z-index: 7;
+    background-color: #f8f9fa !important;
+}
+
+.sticky-col {
+    left: 0;
+}
+
+.sticky-col-2 {
+    left: var(--col-no-w);
+}
+/* EXACTO al ancho de la 1ª */
+
+/* 5) Zebra/hover coherente en celdas sticky */
+.table-striped > tbody > tr:nth-of-type(odd) > .sticky-col,
+.table-striped > tbody > tr:nth-of-type(odd) > .sticky-col-2 {
+    background-color: var(--bs-table-striped-bg, #f8f9fa);
+}
+
+.table-hover > tbody > tr:hover > .sticky-col,
+.table-hover > tbody > tr:hover > .sticky-col-2 {
+    background-color: var(--bs-table-hover-bg, #f2f2f2);
+}
+
+/* 6) Evitar saltos de línea que compacten */
+.table-wide th, .table-wide td {
+    white-space: nowrap;
+}
+
+/* Texto blanco y en negritas para el bloque de totales en headers primarios */
+.card-header.custom-header-primary .header-totals,
+.card-header.bg-primary .header-totals {
+    color: #fff !important;
+    font-weight: 800 !important;
+}
+
+    .card-header.custom-header-primary .header-totals *,
+    .card-header.bg-primary .header-totals * {
+        color: #fff !important;
+        font-weight: 800 !important;
+    }
+
+    /* Variante monocroma (blanca) de la pill de Diferencia cuando está en el header */
+    .card-header.custom-header-primary .header-totals .diff-pill,
+    .card-header.bg-primary .header-totals .diff-pill {
+        background: transparent; /* sin fondo para que contraste con el header */
+        color: #fff !important;
+        border-color: rgba(255,255,255,.35);
+    }
+
+/* Botón de alto contraste dentro de .card-header (bg-primary) */
+.card-header .header-cta {
+    color: #fff !important;
+    border: 1px solid rgba(255,255,255,.7) !important;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: saturate(140%) blur(2px);
+    letter-spacing: .2px;
+}
+
+    .card-header .header-cta:hover {
+        background: rgba(255,255,255,.16);
+        border-color: #fff !important;
+        box-shadow: 0 6px 14px rgba(0,0,0,.15);
+        transform: translateY(-1px);
+    }
+
+    .card-header .header-cta:active {
+        transform: translateY(0);
+    }
+
+    .card-header .header-cta:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 .2rem rgba(255,255,255,.35);
+    }
+
+/* Badges/chips legibles dentro de .custom-header-primary */
+.card-header.custom-header-primary .badge-on-primary {
+    background: #f8f9fa !important;
+    color: #212529 !important;
+    border: 1px solid rgba(0,0,0,.06);
+}
+
+    .card-header.custom-header-primary .badge-on-primary .fa {
+        color: inherit !important;
+    }
+
+/* Asegura que los badges con text-dark sigan oscuros dentro del header */
+.card-header.custom-header-primary .badge.text-dark {
+    color: #212529 !important;
+}
+
+/* Por si usas bg-light directamente */
+.card-header.custom-header-primary .badge.bg-light {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+.approval-stepper {
+    display: flex;
+    gap: 1.25rem;
+    overflow-x: auto;
+    padding: .25rem .25rem .5rem;
+}
+
+    .approval-stepper .step {
+        position: relative;
+        flex: 0 0 auto;
+        min-width: 130px;
+        text-align: center;
+    }
+
+        .approval-stepper .step:not(:first-child)::before {
+            content: "";
+            position: absolute;
+            top: 16px;
+            left: -.625rem; /* conecta con anterior */
+            width: calc(1.25rem + 24px);
+            height: 4px;
+            background: var(--border);
+            border-radius: 4px;
+        }
+
+        .approval-stepper .step.connector-fill:not(:first-child)::before {
+            background: var(--color-primary-2);
+        }
+
+.step-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 999px;
+    margin: 0 auto 6px;
+    display: grid;
+    place-items: center;
+    font-size: .8rem;
+    border: 2px solid var(--border);
+    background: #fff;
+    color: #64748b;
+}
+
+.step-label {
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.step-meta {
+    line-height: 1.15;
+}
+
+/* Estados */
+.step.is-done .step-dot {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: #fff;
+}
+
+.step.is-current .step-dot {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+    box-shadow: 0 0 0 .2rem rgba(44,95,168,.15);
+}
+
+.step.is-modify .step-dot {
+    background: #fde68a;
+    border-color: #f59e0b;
+    color: #111827;
+}
+
+.step.is-rejected .step-dot {
+    background: #ef4444;
+    border-color: #ef4444;
+    color: #fff;
+}
+
+.step.is-pending .step-dot {
+    background: #e5e7eb;
+    border-color: #cbd5e1;
+    color: #64748b;
+}
+
+/* Leyenda */
+.legend-dot {
+    position: relative;
+    padding-left: 22px;
+    margin-right: 12px;
+}
+
+    .legend-dot::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+        border-radius: 999px;
+        border: 2px solid var(--border);
+        background: #fff;
+    }
+
+    .legend-dot.done::before {
+        background: #22c55e;
+        border-color: #22c55e;
+    }
+
+    .legend-dot.current::before {
+        background: var(--color-primary);
+        border-color: var(--color-primary);
+    }
+
+    .legend-dot.modify::before {
+        background: #fde68a;
+        border-color: #f59e0b;
+    }
+
+    .legend-dot.rejected::before {
+        background: #ef4444;
+        border-color: #ef4444;
+    }
+
+    .legend-dot.pending::before {
+        background: #e5e7eb;
+        border-color: #cbd5e1;
+    }
+
+/* Tablas que deben llenar todo el ancho (evitar hueco derecho) */
+.table-fill {
+    width: 100% !important;
+    table-layout: fixed; /* sincroniza thead/tbody */
+}
+
+    .table-fill th, .table-fill td {
+        white-space: nowrap; /* no romper etiquetas/badges/botón */
+    }
+
+        /* Columna de Items (penúltima) a la derecha */
+        .table-fill th.items-col,
+        .table-fill td.items-col {
+            width: 90px;
+            text-align: right;
+        }
+
+        /* Columna de acciones (última) fija */
+        .table-fill th.actions-col,
+        .table-fill td.actions-col {
+            width: 120px;
+            text-align: right;
+        }
+
+/* Por si el card redondeado dejaba ver fondo: */
+.card:has(.table-fill) {
+    overflow: hidden;
+}

@@ -1,0 +1,45 @@
+﻿@model MeaxHub.Models.EditUserSystemsViewModel
+
+@{
+    ViewData["Title"] = "Editar sistemas de usuario";
+}
+
+<h2>Editar sistemas de usuario</h2>
+
+<div class="mb-3">
+    <strong>Usuario:</strong> @Model.PcLoginId (@Model.Username)
+</div>
+
+<form asp-action="EditUserSystems" method="post">
+    <input type="hidden" asp-for="UserId" />
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Asignado</th>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Rol (opcional)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Systems.Count; i++)
+            {
+                <tr>
+                    <td>
+                        <input asp-for="Systems[@i].Assigned" class="form-check-input" />
+                        <input asp-for="Systems[@i].SystemId" type="hidden" />
+                    </td>
+                    <td>@Model.Systems[i].Code</td>
+                    <td>@Model.Systems[i].Name</td>
+                    <td>
+                        <input asp-for="Systems[@i].Role" class="form-control" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <a asp-action="Users" class="btn btn-secondary ms-2">Cancelar</a>
+</form>
