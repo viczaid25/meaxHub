@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("meaxHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1620af99eff3bf0819f1ffb0631cf885d0eaccd")]
 [assembly: System.Reflection.AssemblyProductAttribute("meaxHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("meaxHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
