@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\controllers\\systemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\controllers\\systemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -33,18 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\controllers\\systemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\controllers\\systemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\views\\systems\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -91,10 +95,6 @@
       "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|c:\\users\\dm45207\\source\\repos\\meaxhub\\meaxhub\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1F01401-FF4A-4AC9-B705-DE6D93E7C8A6}|meaxHub\\meaxHub.csproj|solutionrelative:meaxhub\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -114,7 +114,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,20 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MeaxAllSystem.cs",
-              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\MeaxAllSystem.cs",
-              "RelativeDocumentMoniker": "meaxHub\\Models\\MeaxAllSystem.cs",
-              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\MeaxAllSystem.cs",
-              "RelativeToolTip": "meaxHub\\Models\\MeaxAllSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:46:50.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "MeaxDbContext.cs",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Data\\MeaxDbContext.cs",
               "RelativeDocumentMoniker": "meaxHub\\Data\\MeaxDbContext.cs",
@@ -147,12 +134,11 @@
               "RelativeToolTip": "meaxHub\\Data\\MeaxDbContext.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAqwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:46:21.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T18:46:21.852Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "_Sidebar.cshtml",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Shared\\_Sidebar.cshtml",
               "RelativeDocumentMoniker": "meaxHub\\Views\\Shared\\_Sidebar.cshtml",
@@ -160,8 +146,7 @@
               "RelativeToolTip": "meaxHub\\Views\\Shared\\_Sidebar.cshtml",
               "ViewState": "AgIAAHsAAAAAAAAAAAAowJwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T19:16:17.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T19:16:17.462Z"
             },
             {
               "$type": "Document",
@@ -171,14 +156,14 @@
               "RelativeDocumentMoniker": "meaxHub\\Program.cs",
               "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Program.cs",
               "RelativeToolTip": "meaxHub\\Program.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwEMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T18:50:05.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\appsettings.json",
               "RelativeDocumentMoniker": "meaxHub\\appsettings.json",
@@ -186,25 +171,23 @@
               "RelativeToolTip": "meaxHub\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-08T18:50:20.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T18:50:20.358Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "meaxHub\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Controllers\\HomeController.cs",
               "RelativeToolTip": "meaxHub\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA6wBwAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAABwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:50:59.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T18:50:59.228Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "meaxHub\\Views\\Account\\Login.cshtml",
@@ -212,12 +195,11 @@
               "RelativeToolTip": "meaxHub\\Views\\Account\\Login.cshtml",
               "ViewState": "AgIAADoAAAAAAAAAAAAiwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T18:48:28.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T18:48:28.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "meaxHub\\wwwroot\\css\\site.css",
@@ -225,12 +207,11 @@
               "RelativeToolTip": "meaxHub\\wwwroot\\css\\site.css",
               "ViewState": "AgIAAGkDAAAAAAAAAAAgwIsDAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-08T19:10:12.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T19:10:12.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MeaxAllUserSystem.cs",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\MeaxAllUserSystem.cs",
               "RelativeDocumentMoniker": "meaxHub\\Models\\MeaxAllUserSystem.cs",
@@ -238,12 +219,11 @@
               "RelativeToolTip": "meaxHub\\Models\\MeaxAllUserSystem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:47:02.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T18:47:02.587Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "meaxHub\\Views\\Shared\\_Layout.cshtml",
@@ -251,12 +231,11 @@
               "RelativeToolTip": "meaxHub\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAFsAAAAAAAAAAAAiwHYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T19:03:28.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T19:03:28.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "MeaxAllUser.cs",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\MeaxAllUser.cs",
               "RelativeDocumentMoniker": "meaxHub\\Models\\MeaxAllUser.cs",
@@ -264,12 +243,11 @@
               "RelativeToolTip": "meaxHub\\Models\\MeaxAllUser.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:46:39.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T18:46:39.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "meaxHub\\Controllers\\AccountController.cs",
@@ -277,29 +255,23 @@
               "RelativeToolTip": "meaxHub\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAAAswHcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:45:56.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-12-08T18:45:56.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "SystemsController.cs",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Controllers\\SystemsController.cs",
               "RelativeDocumentMoniker": "meaxHub\\Controllers\\SystemsController.cs",
               "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Controllers\\SystemsController.cs",
               "RelativeToolTip": "meaxHub\\Controllers\\SystemsController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAywF4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAiwF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:49:04.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T16:49:04.03Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "SystemCreateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\Systems\\SystemCreateViewModel.cs",
               "RelativeDocumentMoniker": "meaxHub\\Models\\Systems\\SystemCreateViewModel.cs",
@@ -307,77 +279,11 @@
               "RelativeToolTip": "meaxHub\\Models\\Systems\\SystemCreateViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:48:27.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T16:48:27.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Systems\\Create.cshtml",
-              "RelativeDocumentMoniker": "meaxHub\\Views\\Systems\\Create.cshtml",
-              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Systems\\Create.cshtml",
-              "RelativeToolTip": "meaxHub\\Views\\Systems\\Create.cshtml",
-              "ViewState": "AgIAACkAAAAAAAAAAAAiwEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-09T16:51:51.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserSystemItemViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\ViewModels\\UserSystemItemViewModel.cs",
-              "RelativeDocumentMoniker": "meaxHub\\Models\\ViewModels\\UserSystemItemViewModel.cs",
-              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\ViewModels\\UserSystemItemViewModel.cs",
-              "RelativeToolTip": "meaxHub\\Models\\ViewModels\\UserSystemItemViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T19:01:44.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "meaxHub\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "meaxHub\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T18:51:33.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "HomeViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\Home\\HomeViewModel.cs",
-              "RelativeDocumentMoniker": "meaxHub\\Models\\Home\\HomeViewModel.cs",
-              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\Home\\HomeViewModel.cs",
-              "RelativeToolTip": "meaxHub\\Models\\Home\\HomeViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:38:46.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EditUserSystemsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\ViewModels\\EditUserSystemsViewModel.cs",
-              "RelativeDocumentMoniker": "meaxHub\\Models\\ViewModels\\EditUserSystemsViewModel.cs",
-              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\ViewModels\\EditUserSystemsViewModel.cs",
-              "RelativeToolTip": "meaxHub\\Models\\ViewModels\\EditUserSystemsViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T19:01:59.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 3,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "meaxHub\\Controllers\\AdminController.cs",
@@ -385,12 +291,83 @@
               "RelativeToolTip": "meaxHub\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAAqwH8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T19:02:16.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T19:02:16.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 7,
+              "Title": "MeaxAllSystem.cs",
+              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\MeaxAllSystem.cs",
+              "RelativeDocumentMoniker": "meaxHub\\Models\\MeaxAllSystem.cs",
+              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\MeaxAllSystem.cs",
+              "RelativeToolTip": "meaxHub\\Models\\MeaxAllSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T18:46:50.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Systems\\Create.cshtml",
+              "RelativeDocumentMoniker": "meaxHub\\Views\\Systems\\Create.cshtml",
+              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Systems\\Create.cshtml",
+              "RelativeToolTip": "meaxHub\\Views\\Systems\\Create.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAiwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T16:51:51.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserSystemItemViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\ViewModels\\UserSystemItemViewModel.cs",
+              "RelativeDocumentMoniker": "meaxHub\\Models\\ViewModels\\UserSystemItemViewModel.cs",
+              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\ViewModels\\UserSystemItemViewModel.cs",
+              "RelativeToolTip": "meaxHub\\Models\\ViewModels\\UserSystemItemViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T19:01:44.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "meaxHub\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "meaxHub\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-08T18:51:33.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\Home\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "meaxHub\\Models\\Home\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\Home\\HomeViewModel.cs",
+              "RelativeToolTip": "meaxHub\\Models\\Home\\HomeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:38:46.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EditUserSystemsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\ViewModels\\EditUserSystemsViewModel.cs",
+              "RelativeDocumentMoniker": "meaxHub\\Models\\ViewModels\\EditUserSystemsViewModel.cs",
+              "ToolTip": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\ViewModels\\EditUserSystemsViewModel.cs",
+              "RelativeToolTip": "meaxHub\\Models\\ViewModels\\EditUserSystemsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T19:01:59.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Users.cshtml",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Admin\\Users.cshtml",
               "RelativeDocumentMoniker": "meaxHub\\Views\\Admin\\Users.cshtml",
@@ -398,8 +375,7 @@
               "RelativeToolTip": "meaxHub\\Views\\Admin\\Users.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAmwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T19:02:52.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T19:02:52.596Z"
             },
             {
               "$type": "Document",
@@ -411,12 +387,11 @@
               "RelativeToolTip": "meaxHub\\Views\\Account\\AccessDenied.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T18:48:38.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T18:48:38.3Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Models\\Account\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "meaxHub\\Models\\Account\\LoginViewModel.cs",
@@ -424,12 +399,11 @@
               "RelativeToolTip": "meaxHub\\Models\\Account\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T19:10:50.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T19:10:50.659Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "EditUserSystems.cshtml",
               "DocumentMoniker": "C:\\Users\\dm45207\\source\\repos\\meaxHub\\meaxHub\\Views\\Admin\\EditUserSystems.cshtml",
               "RelativeDocumentMoniker": "meaxHub\\Views\\Admin\\EditUserSystems.cshtml",
@@ -437,8 +411,7 @@
               "RelativeToolTip": "meaxHub\\Views\\Admin\\EditUserSystems.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAmwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T19:03:13.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T19:03:13.693Z"
             },
             {
               "$type": "Document",
@@ -450,8 +423,7 @@
               "RelativeToolTip": "meaxHub\\Services\\LdapAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:47:41.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T18:47:41.419Z"
             },
             {
               "$type": "Document",
@@ -463,8 +435,7 @@
               "RelativeToolTip": "meaxHub\\Services\\ILdapAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:47:31.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T18:47:31.143Z"
             }
           ]
         }
